@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,7 +438,7 @@ File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (p1.aux) (p2.aux) (p3.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 20.
@@ -577,9 +577,9 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [1
 
 {C:/Users/wank3/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-\openout2 = `p1.aux'.
+\openout2 = `preguntas/p1.aux'.
 
- (p1.tex
+ (preguntas/p1.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 8.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -589,9 +589,9 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
  [2
 
 ] [3]) [4]
-\openout2 = `p2.aux'.
+\openout2 = `preguntas/p2.aux'.
 
- (p2.tex
+ (preguntas/p2.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
@@ -604,22 +604,22 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 98.
  [7]) [8]
-\openout2 = `p3.aux'.
+\openout2 = `preguntas/p3.aux'.
 
- (p3.tex [9
+ (preguntas/p3.tex [9
 
 
 
 ] [10]) [11] (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (p1.aux) (p2.aux) (p3.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15031 strings out of 475385
- 224070 string characters out of 2793322
+ 15033 strings out of 475385
+ 224928 string characters out of 2793322
  587475 words of memory out of 3000000
  36078 multiletter control sequences out of 15000+600000
  531759 words of font info for 168 fonts, out of 8000000 for 9000
