@@ -1,0 +1,102 @@
+\item La siguiente función representa una curva en un plano bidimensional
+        \begin{LARGE}
+            \begin{equation*}
+                f(x,y) = x \arctan(\frac{x}{y})
+            \end{equation*}
+        \end{LARGE}
+        Determine el valor de $ \frac{\partial f}{\partial \vec{u}}(1, 1) $ donde "$u$" apunta a la dirección de máximo crecimiento para la
+        función en el punto dado.
+\section*{Respuesta}
+    \subsubsection*{Introducción}
+        Para este problema necesitamos calcular la derivada direccional en la dirección de $u$ para ello utilizaremos el cálculo del gradiente
+        de la función en el punto dado para obtener la dirección de máximo crecimiento y al mismo tiempo la derivada direccional.
+        Utilizaremos asi la siguiente formula:
+        \begin{equation}
+            \dfrac{d f}{d \vec{u}} = \vec{\nabla}f \cdot \vec{u}
+            \label{eq:form2}
+        \end{equation}
+    \subsubsection*{Paso 1: Calcular la dirección de máximo crecimiento}
+        Para una función $f(x,y)$ definimos el vector gradiente como:
+        \begin{equation*}
+            \vec{\nabla}f(x, y) = f_x(x, y)\hat{\imath} + f_y(x, y)\hat{\jmath}
+        \end{equation*}
+        Donde $f_x = \dfrac{\partial f(x, y)}{\partial x}$ , $f_y = \dfrac{\partial f(x, y)}{\partial y} $.
+        
+        Sean $f(x)$ y $g(x)$ funciones, recordemos las siguientes propiedades de las derivadas:
+        \begin{enumerate}
+            \item $\dfrac{d [f(x)g(x)]}{dx} = \dfrac{d f(x)}{dx}g(x) + f(x)\dfrac{d g(x)}{dx}$
+            \item $\dfrac{d(f(g(x)))}{dx} = \dfrac{d f(x)}{d(g(x))}\dfrac{d g(x)}{dx} $
+            \item $\dfrac{d x^n}{dx} = nx^{n-1}$
+            \item $\dfrac{d[\arctan(x)]}{dx} = \frac{1}{1 + x^2} $
+        \end{enumerate}
+        Al calcular la derivada parcial de una función tratamos a las otras variables como constantes.
+
+        Utilizando las propiedades mencionadas anteriormente calculemos para nuestra función:
+
+        Para $x$
+        \begin{equation}
+            \begin{split}
+                f_x & = \dfrac{\partial f(x, y)}{\partial x} \\
+                & = \dfrac{\partial [x \arctan(\frac{x}{y})]}{\partial x} \\
+                & = \dfrac{d x}{d x} \arctan(\frac{x}{y}) + x\dfrac{\partial \arctan(\frac{x}{y})}{\partial x} \\
+                & = x\arctan(\frac{x}{y}) + x\left(\dfrac{\partial (\arctan(\frac{x}{y}))}{d \frac{x}{y}}\dfrac{d(\frac{x}{y})}{dx} \right) \\
+                & = x\arctan(\frac{x}{y}) + x\left(\frac{1}{1 + \frac{x^2}{y^2}}\right) \frac{1}{y}  \\
+                & = x\arctan(\frac{x}{y}) + \left(\frac{x}{y + \frac{x^2}{y}}\right)
+            \end{split}
+            \label{eq:diffx}
+        \end{equation}
+        Para $y$
+        \begin{equation}
+            \begin{split}
+                f_y & = \dfrac{\partial f(x, y)}{\partial y} \\
+                & = \dfrac{\partial [x \arctan(\frac{x}{y})]}{\partial y} \\
+                & = x\dfrac{\partial \arctan(\frac{x}{y})}{\partial y} \\
+                & = x\left(\dfrac{\partial (\arctan(\frac{x}{y}))}{d \frac{x}{y}}\dfrac{d(\frac{x}{y})}{dy} \right) \\
+                & = x\left(\frac{1}{1 + \frac{x^2}{y^2}}\right)(-1) \frac{x}{y^2}  \\
+                & = -\frac{x^2}{y^2 + x^2}
+            \end{split}
+            \label{eq:diffy}
+        \end{equation}
+        De modo que nuestro gradiente es:
+        \begin{equation}
+            \vec{\nabla}f(x, y) = \left( x\arctan(\frac{x}{y}) + \frac{x}{y + \frac{x^2}{y}}\right) \hat{\imath} - \frac{x^2}{y^2 + x^2}\hat{\jmath}
+        \end{equation}
+        Ahora como la dirección de  máximo crecimiento $\vec{u}(1,1) = \frac{\vec{\nabla} f(x, y)|_{(1,1)}}{|\vec{\nabla} f(x, y)|_{(1,1)}}$ donde
+        $|\vec{\nabla} f(x, y)| = \sqrt{f_x^2 + f_y^2}$ es conocido como la magnitud de $\vec{\nabla f}$
+
+        Sustituyendo los valores de \eqref{eq:diffx} y \eqref{eq:diffy} y evaluando en el punto $(1, 1)$ obtenemos:
+        \begin{equation}
+            \begin{split}
+                \vec{u}(1,1) & = \frac{\vec{\nabla} f(x, y)|_{(1,1)}}{|\vec{\nabla} f(x, y)|_{(1,1)}} \\
+                & = \frac{f_x(x, y)\hat{\imath} + f_y(x, y)\hat{\jmath}}{\sqrt{f_x^2 + f_y^2}}|_{(1,1)} \\
+                & = \frac{\left( x\arctan(\frac{x}{y}) + \frac{x}{y + \frac{x^2}{y}}\right) \hat{\imath} - \frac{x^2}{y^2 + x^2}\hat{\jmath}}
+                {\sqrt{\left( x\arctan(\frac{x}{y}) + \frac{x}{y + \frac{x^2}{y}}\right)^2 + \left(\frac{x^2}{y^2 + x^2}\right)^2}|_{(1,1)}} \\
+                & = \frac{\left( 1*\arctan(\frac{1}{1}) + \frac{1}{1 + \frac{1^2}{1}}\right) \hat{\imath} - \frac{1^2}{1^2 + 1^2}\hat{\jmath}}
+                {\sqrt{\left( 1*\arctan(\frac{1}{1}) + \frac{1}{1 + \frac{1^2}{1}}\right)^2 + \left(\frac{1^2}{1^2 + 1^2}\right)^2}} \\
+                & = \frac{\left( a + \frac{1}{2}\right) \hat{\imath} - \frac{1}{2}\hat{\jmath}}
+                {\sqrt{\left( a + \frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2}} \\
+            \end{split}
+            \label{eq:sol2p}
+        \end{equation}
+        Hemos definido $\arctan(1) = a$ solamente para evitar usar su valor numérico, lo utilizaremos asi en el siguiente paso.
+
+    \subsubsection*{Paso 2: Calculemos la derivada direccional}
+        Para dos vectores $\vec{p} = m \hat{\imath} + l \hat{\jmath} $ y $\vec{q} = r \hat{\imath} + s \hat{\jmath} $ se define
+        $ \vec{p} \cdot \vec{q} = m*r + l*s $ como el producto escalar.
+
+        Utilizando lo anterior y los valores calculados en \eqref{eq:sol2p} en la fórmula \eqref{eq:form2} obtenemos:
+        \begin{equation}
+            \begin{split}
+                \dfrac{d f}{d \vec{u}} & = \vec{\nabla}f \cdot \vec{u} \\
+                & = \left[\left( a + \frac{1}{2}\right) \hat{\imath} - \frac{1}{2}\hat{\jmath} \right]\cdot \frac{\left( a + \frac{1}{2}\right)
+                 \hat{\imath} - \frac{1}{2}\hat{\jmath}} {\sqrt{\left( a + \frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2}} \\
+                & = \frac{\left( a + \frac{1}{2}\right)^2 - \frac{1}{2}^2}
+                 {\sqrt{\left( a + \frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2}} \\
+                 & = \sqrt{\left( a + \frac{1}{2}\right)^2 + \frac{1}{4}} \\
+            \end{split}
+        \end{equation}
+    \subsection*{Conclusión}
+        Regresamos el valor de $\arctan(1)$ y obtenemos la solución.
+        \begin{equation*}
+            \boxed{ \dfrac{d f}{d \vec{u}}(1,1) = \sqrt{\left( \frac{\pi}{4} + \frac{1}{2}\right)^2 + \frac{1}{4}} }
+        \end{equation*}

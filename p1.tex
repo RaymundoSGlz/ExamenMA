@@ -1,0 +1,129 @@
+\item Utilice las condiciones iniciales dadas para determinar la solución particular del siguiente sistema:
+    \begin{LARGE}
+        \begin{equation*}
+            \ddot{x} + 6\dot{x} + 9x = 3e^{-3t}
+        \end{equation*}
+    \end{LARGE}
+    Las condiciones iniciales son $x(0)=0$ y $\dot{x}(0)=1$.
+\section*{Respuesta}
+    \subsubsection*{Introducción}
+        Para este problema necesitamos calcular la solución del sistema dadas las condiciones iniciales, para
+        ello dado que se trata de una ecuación diferencial ordinaria (ODE) no homogénea, su solución se compone de 
+        la suma de una solución complementaria y una solución particular, calculáremos primero la parte complementaria que es
+        la solución de la ecuación homogénea asociada, posteriormente calcularemos la solución particular y finalmente
+        utilizaremos las condiciones iniciales para hallar los valores de las constantes que acompañan la solución.
+    \subsubsection*{Paso 1: Solución de la ecuación homogénea asociada}
+        La ecuación homogénea asociada a nuestra ecuación es:
+        \begin{equation}
+            \ddot{x} + 6\dot{x} + 9x = 0
+            \label{eq:diff}
+        \end{equation}
+        Para este tipo de ecuaciones sus soluciones tienen la siguiente forma: $x = e^{\lambda t} $, donde debemos encontrar el
+        valor de $\lambda$ sustituyendo $ x $ en \eqref{eq:diff}. Obtenemos asi utilizando 
+        $\dfrac {d( e^{\lambda t} )}{d t}=\lambda e^{\lambda t}$:
+        \begin{equation*}
+            \begin{split}
+                \ddot{x} + 6\dot{x} + 9x & = \lambda^2 e^{\lambda t} + 6\lambda e^{\lambda t} 9 e^{\lambda t}\\
+                & = e^{\lambda t}(\lambda^2 + 6\lambda + 9) \\
+                & = 0
+            \end{split}
+        \end{equation*}
+        Dado que $ e^{\lambda t} $ nunca es cero para valores finitos de t, bastara con resolver:
+        \begin{equation*}
+            \lambda^2 + 6\lambda + 9 = 0
+        \end{equation*}
+        para encontrar los valores de $\lambda$, podemos entonces agrupar de la siguiente forma
+        \begin{equation*}
+            \begin{split}
+                \lambda^2 + 6\lambda + 9 & = (\lambda + 3)(\lambda + 3)\\
+                & = (\lambda + 3)^2 \\
+                & = 0
+            \end{split}
+        \end{equation*}
+        las soluciones de esta ecuación nos devuelven los valores de $\lambda_1 = -3$ y $\lambda_2 = -3$, dado que los valores son múltiplos
+        enteros (particularmente el mismo valor), la solución de la ecuación homogénea sera $ c_1 e^{\lambda_1 t} + c_2 e^{\lambda_1 t} t$
+        donde $c_1$ y $c_2$ son valores enteros que calcularemos mas adelante. Sustituyendo los valores obtenemos asi la solución 
+        complementaria
+        \begin{equation}
+            x_c = c_1 e^{-3 t} + c_2 e^{-3 t} t
+            \label{eq:xc}
+        \end{equation}
+    \subsubsection*{Paso 2: Solución particular por el método de coeficientes indeterminados}
+        Dado que la ecuación homogénea asociada nos devolvió una solución de la forma $t e^{-3 t}$ la solución particular debe ser de
+        la forma $x_p = a e^{-3 t} t^2 $.
+
+        Calculemos primero $\dfrac{d^2(x_p)}{dt^2}$ y $\dfrac{d(x_p)}{dt}$
+        \begin{equation}
+            \begin{split}
+                \dfrac{d(x_p)}{dx} & = \dfrac{d(a e^{-3 t} t^2)}{dt}\\
+                & = a \dfrac{d(e^{-3 t} t^2)}{dt} \\
+                & = a\left[\dfrac{d(e^{-3 t})}{dt}t^2 + e^{-3t}\dfrac{d(t^2)}{dt}\right] \\
+                & = a(-3e^{-3t}t^2 + 2e^{-3t}t)
+            \end{split}
+            \label{eq:p1}
+        \end{equation}
+        \begin{equation}
+            \begin{split}
+                \dfrac{d^2(x_p)}{dt^2} & = \dfrac{d(\dfrac{d(x_p)}{dt})}{dt} \\
+                & = \dfrac{d(a[-3e^{-3t}t^2 + 2e^{-3t}t])}{dt} \\
+                & = a\left[-3\dfrac{d(e^{-3t}t^2)}{dt} + 2\dfrac{d(e^{-3t}t)}{dt}\right] \\
+                & = a\left[-3(\dfrac{d(e^{-3 t})}{dt}t^2 + e^{-3t}\dfrac{d(t^2)}{dt}) + 2(\dfrac{d(e^{-3t})}{dt}t+e^{-3t}\dfrac{d(t)}{dt})\right] \\
+                & = a\left[-3(-3e^{-3t}t^2 + 2e^{-3t}t)+ 2(-3e^{-3t}+e^{-3t})\right] \\
+                & = a(9e^{-3t}t^2 - 12e^{-3t}t + 2e^{-3t})
+            \end{split}
+            \label{eq:p2}
+        \end{equation}
+        sustituyendo \eqref{eq:p1} y \eqref{eq:p2} en nuestra ecuación inicial obtenemos el valor de $a$
+        \begin{equation*}
+            \begin{split}
+                \ddot{x} + 6\dot{x} + 9x & = 3e^{-3t} \\
+                a(9e^{-3t}t^2 - 12e^{-3t}t + 2e^{-3t}) + 6a(-3e^{-3t}t^2 + 2e^{-3t}t) + 9e^{-3t}t^2 & = 3e^{-3t} \\
+                a(9t^2 - 12t + 2 -18t^2 + 12t + 9t^2)e^{-3t} & = 3e^{-3t} \\
+                2a & = 3 \\
+                a & = \frac{3}{2}
+            \end{split}
+        \end{equation*}
+        De modo que nuestra solución particular es 
+        \begin{equation}
+            x_p = \frac{3}{2}e^{-3t}t^2
+            \label{eq:xp}
+        \end{equation}
+        la suma de nuestra solución complementaria \eqref{eq:xc} y nuestra solución particular\eqref{eq:xp} es nuestra solución completa.
+        \begin{equation}
+            \begin{split}
+                x & = x_c + x_p \\ 
+                & = c_1 e^{-3 t} + c_2 e^{-3 t} t + \frac{3}{2}e^{-3t}t^2 \\
+                & = (c_1 + c_2 t + \frac{3}{2} t^2)e^{-3t}
+            \end{split}
+            \label{eq:sol1p}
+        \end{equation}
+    \subsubsection*{Paso 3: Calcular los valores de los coeficientes}
+        Para calcular los valores de los coeficientes $c_1$ y $c_2$ utilizaremos las condiciones iniciales, para ello utilizando
+        \eqref{eq:sol1p} y recordando que $e^0 = 1$ calculemos
+        \begin{equation}
+            \begin{split}
+                x(0) & = 0 \\
+                (c_1 + c_2 * (0) + \frac{3}{2}(0)^2)e^{-3*0} & = 0\\
+                c_1 & = 0
+            \end{split}
+            \label{eq:c1}
+        \end{equation}
+        \begin{equation}
+            \begin{split}
+                \dot{x}(0) & = 0 \\
+                \dfrac{d([c_1 + c_2 t + \frac{3}{2} t^2]e^{-3t})}{dt}|_{t=0} & = 1\\
+                \dfrac{d(c_1 + c_2 t + \frac{3}{2}t^2)}{dt}e^{-3t}|_{t=0} + [c_1 + c_2 t + \frac{3}{2}]\dfrac{d(e^{-3t})}{dt}|_{t=0} & = 1 \\
+                (c_2 + 3t)e^{-3t}|_{t=0} + [c_1 + c_2 t + \frac{3}{2}t^2](-3e^{-3t})|_{t=0} & = 1 \\
+                (c_2 + 3*(0))e^{-3*(0)} + [c_1 + c_2*(0) + \frac{3}{2}(0)^2](-3e^{-3*(0)}) & = 1 \\
+                c_2 - 3c_1 +  & = 1\\
+                c_2 - 3*(0) & = 1\\
+                c_2 & = 1
+            \end{split}
+            \label{eq:c2}
+        \end{equation}
+    \subsubsection*{Conclusión}
+        Sustituyendo los valores de $c_1$ y $c_2$ obtenidos en \eqref{eq:c1} y \eqref{eq:c2} respectivamente en \eqref{eq:sol1p}
+        obtenemos la solución final.
+        \begin{equation*}
+            \boxed{x =  \left(1 + \frac{3}{2} t^2\right)e^{-3t}}
+        \end{equation*}

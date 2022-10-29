@@ -1,0 +1,86 @@
+\item Si la region $1 \leq x \leq 2 $, $0 \leq y \leq 1 $ es denominada $A$, determine el valor de
+        \begin{LARGE}
+            \begin{equation*}
+                \iint_A \frac{1}{x^2 + 2xy + y^2 + 1} dx dy
+            \end{equation*}
+        \end{LARGE}
+\section*{Respuesta}
+    \subsubsection*{Introducción}
+        Para este problema necesitamos calcular la doble integral de la función dada, para ello calcularemos primero la integral dependiente
+        de una variable considerando la otra variable como constante, posteriormente evaluaremos en el espacio determinado como A. Después 
+        calcularemos y evaluaremos la segunda integral.
+    \subsubsection*{Paso 1: Solución de la integral respecto de x}
+        Para resolver la primer integral para $x$ en el espacio dado podemos reescribir la integral de la siguiente forma, esto recordando
+        la expansión de un binomio al cuadrado $(a+b)^2 = a^2 + 2ab + b^2$
+        \begin{equation*}
+            \iint_A \frac{1}{x^2 +2xy + y^2 + 1} = \int \left[ \int_1^2 \frac{1}{(x + y)^2 + 1}dx \right] dy
+        \end{equation*}
+        Esta integral la podemos simplificar realizando el siguiente cambio de variable:
+        \begin{align*}
+            u & = x + y \\
+            du & = dx \\
+        \end{align*}
+        si $x$ esta definido en $1 \leq x \leq 2$ entonces tenemos $1 + y \leq x + y \leq 2 + y$ así que $1 + y \leq u \leq 2 + y$.
+        \begin{equation*}
+            \int \left[ \int_{1+y}^{2+y} \frac{1}{(u)^2 + 1}du \right] dy
+        \end{equation*}
+        Para la integral respecto de $u$ utilizamos $\int \frac{1}{x^2 + 1} dx = \arctan(x)$
+        \begin{align}
+            \int \left[ \int_{1+y}^{2+y} \frac{1}{(u)^2 + 1}du \right] dy & = \int \left[ \arctan(u)|_{1+y}^{2+y} \right] dy \\
+            & = \int \left[ \arctan(2+y) - \arctan(1+y) \right] dy \\
+            & = \int \arctan(2+y) dy - \int \arctan(1+y) dy
+            \label{eq:sol3p}
+        \end{align}
+        Para estas dos integrales resultantes veamos que son similares, para resolverlas ambas al mismo tiempo en una sola notemos 
+        que el argumento de las dos es de la forma $(a + y)$, entonces resolvamos
+        \begin{equation*}
+            \int \arctan(a + y)dy
+        \end{equation*}
+        Resolvamos esta integral integrando por partes, es decir utilizando la siguiente fórmula de integración:
+        \begin{equation*}
+            \int udv = uv - \int vdu
+        \end{equation*}
+        Para nuestro caso sea
+        \begin{align*}
+            u & = \arctan(a + y) & dv & = dy  \\
+            \dfrac{d u}{dy} & = \frac{1}{(a+y)^2 + 1} & \int dv & = \int dy \\
+            du & = \frac{1}{(a+y)^2 + 1} dy & v &= y
+        \end{align*}
+        sustituyendo esto en nuestra fórmula de integración obtenemos
+        \begin{equation*}
+            \int arctan(a + y) = y \arctan(a + y) - \int \frac{y}{(a + y)^2 +1} dy
+        \end{equation*}
+        Ahora para resolver esta ultima integral haremos el siguiente cambio de variable $x = (a + y)$, obteniendo asi
+        \begin{align*}
+            \int \frac{y}{(a + y)^2 + 1} & = \int \frac{x - a}{x^2 + 1} \\
+            & = \int \frac{x}{x^2 + 1} - a \int \frac{1}{x^2 + 1} \\
+            & = \int \frac{x}{x^2 + 1} - a \arctan(x)
+        \end{align*}
+        Para la primer integral que falta realizamos el siguiente cambio de variable $ s = x^2 + 1$ asi que $ds = 2x dx $,
+        utilizaremos también $ \int \frac{1}{v}dv = \ln(v)$
+        \begin{align*}
+            \int \frac{x}{x^2 + 1} dx & = \int \frac{x}{s}\frac{2}{2x}ds \\
+            & = \frac{1}{2} \int \frac{1}{s}ds \\
+            & = \frac{1}{2} \ln(s) \\
+            & = \frac{\ln(x^2 +1)}{2}
+        \end{align*}
+        Sustituyendo este resultado y el anterior y regresando a la variable $y$, obtenemos
+        \begin{align*}
+            \int arctan(a + y) & = y \arctan(a + y) - \left[ - \arctan(a + y) + \frac{\ln((a + y)^2 +1)}{2} \right] \\
+            & =  y \arctan(a + y) + a \arctan(a + y) - \frac{\ln((a + y)^2 +1)}{2}
+        \end{align*}
+        Utilizamos este ultimo resultado en \eqref{eq:sol3p} con los valores respectivos de $a$ para obtener el resultado final
+        \begin{align*}
+            \int_0^1 \left[ \int_{1+y}^{2+y} \frac{1}{(u)^2 + 1}du \right] dy & = \int_0^1 \arctan(2+y) dy - \int_0^1 \arctan(1+y) dy \\
+            & = \left[y \arctan(2 + y) + 2 \arctan(2 + y) - \frac{\ln((2 + y)^2 +1)}{2}\right]|_0^1 \\
+            & \hspace{1cm} - \left[y \arctan(1 + y) + \arctan(1 + y) - \frac{\ln((1 + y)^2 +1)}{2}\right]|_0^1 \\
+            & = \left[(y + 2)(\arctan(2 +y)) - \frac{\ln((2 + y)^2 +1)}{2})\right]|_0^1 \\
+            & \hspace{1cm} -  \left[(y + 1)(\arctan(1 +y)) - \frac{\ln((1 + y)^2 +1)}{2})\right]|_0^1 \\
+            & = (3)(\arctan(3)) - \frac{\ln(10)}{2}) - (2)(\arctan(2)) - \frac{\ln(5)}{2}) \\
+            & \hspace{1cm} -\left[(2)(\arctan(2)) - \frac{\ln((5)}{2}) - \arctan(1) - \frac{\ln(2)}{2})\right]
+        \end{align*}
+    \subsection*{Conclusión}
+        Calculando los valores numéricos obtenemos
+        \begin{equation*}
+            \boxed{ \int_0^1 \left[ \int_{1+y}^{2+y} \frac{1}{(u)^2 + 1}du \right] dy = 0.215512 }
+        \end{equation*}
