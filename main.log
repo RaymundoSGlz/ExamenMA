@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,7 +438,7 @@ File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 20.
@@ -610,25 +610,46 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 
 
-] [10]) [11] (main.aux
+] [10]) [11]
+\openout2 = `preguntas/p4.aux'.
+
+ (preguntas/p4.tex) [12
+
+
+
+]
+\openout2 = `preguntas/p5.aux'.
+
+ (preguntas/p5.tex
+Package textcomp Info: Symbol \textlangle not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 15.
+Package textcomp Info: Symbol \textrangle not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 15.
+ [13
+
+
+
+]) [14] (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15033 strings out of 475385
- 224928 string characters out of 2793322
- 587475 words of memory out of 3000000
- 36078 multiletter control sequences out of 15000+600000
- 531759 words of font info for 168 fonts, out of 8000000 for 9000
+ 15120 strings out of 475385
+ 227107 string characters out of 2793322
+ 588377 words of memory out of 3000000
+ 36130 multiletter control sequences out of 15000+600000
+ 534869 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,19n,77p,329b,719s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (11 pages, 180623 bytes).
+ 72i,19n,77p,329b,760s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\wank3\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (14 pages, 196031 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,74 @@
+\item Un triángulo con vertices en $(0,0)$, $(0,1)$, $(1,2)$ en sentido antihorario, delimita una región.
+    Determine la integral sobre esta región de la siguiente expresión.
+    \begin{LARGE}
+        \begin{equation*}
+            \int_\Omega (x - y)dx + e^{x+y}dy
+        \end{equation*}
+    \end{LARGE}
+\section*{Respuesta}
+    \subsubsection*{Introducción}
+        Para resolver esta integral primero la reescribiremos utilizando el teorema de Green, una vez transformada en una integral doble
+        la resolveremos utilizando los métodos de integración comunes y evaluaremos en los limites dados.
+    \subsection*{Paso 1: Uso del teorema de Green y simplificación de la  integral}
+        Para una region $D$ delimitada por una curva cerrada $c$ simple y suave a trozos orientada en sentido contrario a las agujas del reloj.
+
+        Supongamos que F=⟨P,Q⟩ es un campo vectorial con funciones componentes que tienen derivadas parciales continuas en D. Entonces,
+        \begin{equation*}
+            \oint_C \bf{F}\cdot d\bf{r} = \oint_C P dx + Q dy = \iint_D (Q_x - P_y)dA
+        \end{equation*}
+        En nuestro caso la curva es la superficie de un triángulo por lo que se cumplen las condiciones, además que
+        $P = x - y $ y $Q = e^{x + y} $ podemos así calcular
+        \begin{align*}
+            P_y & = \dfrac{\partial P}{\partial y} & Q_x & =  \dfrac{\partial Q}{\partial x} \\
+            & = \dfrac{\partial (x - y)}{\partial y} & & =  \dfrac{\partial e^{x + y} }{\partial x} \\
+            & = - 1 \hspace{2 cm} & & = e^{x + y}
+        \end{align*}
+        Para los limites de integración $x$ solo va de 0 a 1, por lo que estos seran sus limites, mientras que $y $ se mueve de 0 a 2 y después a 1
+        este comportamiento lo podemos describir respecto a $x$ de la siguiente forma $2x$ y $x + 1$ el primero devuelve el primer y segundo valor de
+        $y$ para los valores de $x$ y el segundo devuelve el segundo y tercer valor de $y$ para los valores de $x$ asi que estos serán los limites de
+        integración de $y$ inferior y superior respectivamente.
+
+        Utilizando el teorema de Green, asi como los valores de $Q_x$ y $P_y$ asi como los limites de integración, obtenemos
+        \begin{align}
+            \int_\Omega (x - y)dx + e^{x+y}dy & = \int_0^1\int_{2x}^{x+1} (e^{x + y} - 1) dy dx \\
+            & = \int_0^1\int_{2x}^{x+1}e^{x + y} dy dx - \int_0^1\int_{2x}^{x+1} dy dx
+            \label{eq:sol5p}
+        \end{align}
+    \subsection*{Paso 2: Resolución de las integrales dobles}
+        Para la primer integral recordemos que si $a$ es una constante $\int e^{x+a} dx = e^{x+a}$
+        \begin{align*}
+            \int_0^1\int_{2x}^{x+1} e^{x + y} dy dx & = \int_0^1 \left(e^{x + y}\right)_{2x}^{x+1} dx \\
+            & = \int_0^1 e^{x + x + 1}dx - \int_0^1 e^{x + 2x}dx \\
+            & = \int_0^1 e^{2x + 1}dx - \int_0^1 e^{3x}dx
+        \end{align*}
+        Para resolver ahora respecto a $x$ utilizaremos que $\int e^{ax + b} = \frac{e^{ax+b}}{a}$ para $a$ y $b$ constantes
+        \begin{align*}
+            \int_0^1 e^{2x + 1}dx & = 2 e^{2x + 1} |_0^1 \\
+            & = \frac{1}{2}(e^3 - e)
+        \end{align*}
+        \begin{align*}
+            \int_0^1 e^{3x}dx & = 3 e^{3x} |_0^1 \\
+            & = \frac{1}{3}(e^3 - 1)
+        \end{align*}
+        Así que
+        \begin{equation}
+            \int_0^1\int_{2x}^{x+1} e^{x + y} dy dx = \frac{1}{2}(e^3 - e) - \frac{1}{3}(e^3 - 1) = \frac{1}{6}(e^3 -3e + 2)
+            \label{eq:sol5c1}
+        \end{equation} 
+        Calculemos ahora
+        \begin{align*}
+            \int_0^1\int_{2x}^{x+1} dy dx & = \int_0^1(1-x) dx \\
+            & = \left(x - \frac{x^2}{2}\right)|_0^1 \\
+            & = \frac{1}{2}
+            \label{eq:sol5c2} 
+        \end{align*}
+        Sustituyendo \eqref{eq:sol5c1} y \eqref{eq:sol5c2} en \eqref{eq:sol5p} obtenemos
+        \begin{align}
+            \int_\Omega (x - y)dx + e^{x+y}dy & = \frac{1}{6}(e^3 -3e + 2) - \frac{1}{2} \\
+            & = \frac{1}{6}(e^3 -3e - 1)
+        \end{align}
+\subsection*{Solución}
+    Calculando el valor numérico
+    \begin{equation*}
+        \boxed{ \int_\Omega (x - y)dx + e^{x+y}dy \approx 1.8218 }
+    \end{equation*}
