@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  29 OCT 2022 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,7 +438,7 @@ File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux) (preguntas/p8.aux) (preguntas/p9.aux) (preguntas/p10.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 20.
@@ -631,25 +631,60 @@ Package textcomp Info: Symbol \textrangle not provided by
 
 
 
-]) [14] (main.aux
+]) [14]
+\openout2 = `preguntas/p6.aux'.
+
+ (preguntas/p6.tex) [15
+
+
+
+]
+\openout2 = `preguntas/p7.aux'.
+
+ (preguntas/p7.tex) [16
+
+
+
+]
+\openout2 = `preguntas/p8.aux'.
+
+ (preguntas/p8.tex) [17
+
+
+
+]
+\openout2 = `preguntas/p9.aux'.
+
+ (preguntas/p9.tex) [18
+
+
+
+]
+\openout2 = `preguntas/p10.aux'.
+
+ (preguntas/p10.tex) [19
+
+
+
+] (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux) (preguntas/p8.aux) (preguntas/p9.aux) (preguntas/p10.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15120 strings out of 475385
- 227107 string characters out of 2793322
- 588377 words of memory out of 3000000
- 36130 multiletter control sequences out of 15000+600000
- 534869 words of font info for 174 fonts, out of 8000000 for 9000
+ 15293 strings out of 475385
+ 232048 string characters out of 2793322
+ 590038 words of memory out of 3000000
+ 36238 multiletter control sequences out of 15000+600000
+ 537029 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,19n,77p,329b,760s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,19n,77p,329b,849s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\wank3\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (14 pages, 196031 bytes).
+Output written on main.pdf (19 pages, 203249 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
