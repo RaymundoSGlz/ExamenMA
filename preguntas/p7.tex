@@ -1,12 +1,79 @@
-\item 
+\item Dada la siguiente función
         \begin{LARGE}
             \begin{equation*}
-                f(x,y) = 
+                f(x) = x^3 , \hspace{2 cm} - \pi \leq x \leq \pi
             \end{equation*}
         \end{LARGE}
+    Calcular la serie de Fourier que la representa
 \section*{Respuesta}
     \subsubsection*{Introducción}
-
-    \subsubsection*{Paso 1:}
+        Para este problema necesitamos calcular la serie de Fourier, para ello primero calcularemos los coeficientes de Fourier 
+        en el intervalo dado.
+    \subsubsection*{Paso 1: Cálculo de los coeficientes de Fourier}
+        Para una función $f$ su serie de Fourier se define como:
+        \begin{equation*}
+            f(x) = \frac{a_0}{2} + \sum_{n = 1}^{\infty} \left[a_n \cos(nx) + b_n \sin(nx) \right]
+        \end{equation*}
+        Donde llamamos coeficientes de Fourier a
+        \begin{align*}
+            a_0 & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) dx \\
+            a_n & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)\cos(nx) dx \\
+            b_n & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)\sin(nx) dx
+        \end{align*}
+        Calculemos:
+        \begin{align*}
+            a_0 & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) dx \\
+            & = \frac{1}{\pi} \int_{-\pi}^{\pi} x^3 dx \text{ Utilizando que } \int x^n = \frac{x^{n+1}}{n+1} \\
+            & = \frac{1}{4 \pi} [x^4]|_{-\pi}^{\pi} \\
+            & = \frac{1}{4 \pi} [(\pi)^4 - (\pi)^4] \\
+            & = 0
+        \end{align*}
+        Para $a_n$
+        \begin{align*}
+            a_n & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)\cos(nx) dx \\
+            & = \frac{1}{\pi} \int_{-\pi}^{\pi} x^3 \cos(nx) dx \\
+            & = 0
+        \end{align*}
+        Lo anterior dado que $ x^3 \cos(nx) $ es una función impar y el intervalo $[-\pi , \pi]$ es simétrico alrededor de 0.
+        Para $b_n$ recordemos la fórmula de integración por partes
+        \begin{equation*}
+            \int u dv = uv - \int v du
+        \end{equation*}
+        También utilizaremos $ \int \sin(nx) = -\frac{\cos(nx)}{n}$ y $ \int \cos(nx) = \frac{\sin(nx)}{n}$
+        \begin{align*}
+            b_n & = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)\sin(nx) dx \\
+            & = \frac{1}{\pi} \int_{-\pi}^{\pi} x^3 \sin(nx) dx & u & = x^3 & dv & = \sin(nx) \\
+            & = \frac{1}{n \pi} \left[- x^3 \cos(nx)\right] |_{-\pi}^{\pi} + \frac{3}{n \pi} \int_{-\pi}^{\pi} x^2 \cos(nx) dx & du & = 3x^2 dx 
+            & v & = \frac{\cos(nx)}{n} \\
+            & = \frac{1}{n \pi} \left[- (\pi)^3 \cos(n\pi) - (- (-\pi)^3 \cos(-n\pi))\right] + \frac{3}{n \pi} \int_{-\pi}^{\pi} x^2 \cos(nx) dx \\
+            & = - \frac{2(\pi)^2}{n} \cos(n\pi) + \frac{3}{n \pi} \int_{-\pi}^{\pi} x^2 \cos(nx) dx
+        \end{align*}
+        Para la segunda integral del lado derecho volvemos a utilizar integración por partes
+        \begin{align*}
+            \int_{-\pi}^{\pi} x^2 \cos(nx) dx & = \frac{1}{n} [x^2 \sin(nx)]|_{-\pi}^{\pi} - \frac{2}{n} \int_{-\pi}^{\pi} x \sin(nx) dx \\
+            & = \frac{2 (\pi)^2}{n} \sin(n\pi) - \frac{2}{n} \int_{-\pi}^{\pi} x \sin(nx) dx
+        \end{align*}
+        Para la segunda integral del lado derecho volvemos a utilizar integración por partes
+        \begin{align*}
+            \int_{-\pi}^{\pi} x \sin(nx) dx & = - \frac{1}{n} [x \cos(nx)]|_{-\pi}^{\pi} - \frac{1}{n} \int_{-\pi}^{\pi} \cos(nx) dx \\
+            & = -\frac{2 \pi}{n} \cos(n\pi) + \frac{1}{n} \int_{-\pi}^{\pi}\cos(nx) dx \\
+            & = -\frac{2 \pi}{n} \cos(n\pi) + \frac{1}{n^2} [\sin(nx)]|_{-\pi}^{\pi} \\
+            & = -\frac{2 \pi}{n} \cos(n\pi) + \frac{2}{n^2} \sin(n\pi)
+        \end{align*}
+        Sustituyendo estos valores en la ecuación para $b_n$ obtenemos:
+        \begin{align*}
+            b_n & = - \frac{2(\pi)^2}{n} \cos(n\pi) + \frac{3}{n \pi} \left[  \frac{2 (\pi)^2}{n} \sin(n\pi) - 
+            \frac{2}{n} \left( -\frac{2 \pi}{n} \cos(n\pi) + \frac{2}{n^2} \sin(n\pi) \right) \right] \\
+        \end{align*}
+        Dado que $\sin(n\pi) = 0$ y $\cos(n\pi) = (-1)^n$
+        \begin{align*}
+            b_n & = - \frac{2(\pi)^2}{n} (-1)^n + \frac{3}{n \pi} \left[  - 
+            \frac{2}{n} \left( -\frac{2 \pi}{n} (-1)^n \right) \right] \\
+            & = - \frac{2 \pi^2}{n} (-1)^n + \frac{12}{n^3} (-1)^n
+        \end{align*}
 
 \subsection*{Conclusión}
+    La serie de Fourier de la función dada es:
+    \begin{equation*}
+        \boxed{f(x) = \sum_{n = 1}^{\infty} \left[ \left(\frac{12}{n^3} (-1)^n - \frac{2 \pi^2}{n} (-1)^n \right) \sin(nx) \right]}
+    \end{equation*}

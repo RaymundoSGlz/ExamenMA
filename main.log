@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  30 OCT 2022 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.7)  30 OCT 2022 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,12 +446,12 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 38.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 39.
  (C:\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 38.
+(Font)              scaled to size 12.0pt on input line 39.
  (C:\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
@@ -459,47 +459,47 @@ File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux) (preguntas/p8.aux) (preguntas/p9.aux) (preguntas/p10.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 38.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 38.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 39.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 39.
  (C:\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 39.
  (C:\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 39.
  (C:\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 39.
  (C:\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -535,12 +535,12 @@ LaTeX Font Info:    ... okay on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 38.
-LaTeX Info: Command `\ddddot' is already robust on input line 38.
+LaTeX Info: Command `\dddot' is already robust on input line 39.
+LaTeX Info: Command `\ddddot' is already robust on input line 39.
 \c@mv@tabular=\count308
 \c@mv@boldtabular=\count309
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
 (C:\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (C:\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -563,37 +563,37 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \makeMPintoPDFobject=\count315
 \everyMPtoPDFconversion=\toks32
 )) (C:\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 38.
+Package hyperref Info: Link coloring ON on input line 39.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 \c@lstlisting=\count316
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 40.
+(Font)              scaled to size 20.74pt on input line 41.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 40.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 40.
+(Font)              scaled to size 14.4pt on input line 41.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 41.
  (C:\MiKTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (C:\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (C:\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 40.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 41.
  (C:\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 40.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 41.
  (C:\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 40.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 41.
  (C:\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [1
@@ -633,13 +633,6 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 
 ] [10]) [11]
-\openout2 = `preguntas/p4.aux'.
-
- (preguntas/p4.tex) [12
-
-
-
-]
 \openout2 = `preguntas/p5.aux'.
 
  (preguntas/p5.tex
@@ -649,17 +642,17 @@ Package textcomp Info: Symbol \textlangle not provided by
 Package textcomp Info: Symbol \textrangle not provided by
 (textcomp)             font family ntxtlf in TS1 encoding.
 (textcomp)             Default family used instead on input line 15.
- [13
+ [12
 
 
 
-]) [14]
+]) [13]
 \openout2 = `preguntas/p6.aux'.
 
  (preguntas/p6.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 29.
- [15
+ [14
 
 
 
@@ -672,53 +665,32 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 9.
-) [16]) [17]
+) [15]) [16]
 \openout2 = `preguntas/p7.aux'.
 
- (preguntas/p7.tex) [18
+ (preguntas/p7.tex [17
 
 
 
-]
-\openout2 = `preguntas/p8.aux'.
-
- (preguntas/p8.tex) [19
-
-
-
-]
-\openout2 = `preguntas/p9.aux'.
-
- (preguntas/p9.tex) [20
-
-
-
-]
-\openout2 = `preguntas/p10.aux'.
-
- (preguntas/p10.tex) [21
-
-
-
-] (main.aux
+] [18]) [19] (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p4.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux) (preguntas/p8.aux) (preguntas/p9.aux) (preguntas/p10.aux))
+ (preguntas/p1.aux) (preguntas/p2.aux) (preguntas/p3.aux) (preguntas/p5.aux) (preguntas/p6.aux) (preguntas/p7.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17059 strings out of 475385
- 255297 string characters out of 2793322
- 635790 words of memory out of 3000000
- 37954 multiletter control sequences out of 15000+600000
+ 16927 strings out of 475385
+ 251421 string characters out of 2793322
+ 634323 words of memory out of 3000000
+ 37870 multiletter control sequences out of 15000+600000
  537405 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,19n,77p,329b,1616s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,19n,77p,329b,1597s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc} <C:\Users\wank3\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (21 pages, 220345 bytes).
+Output written on main.pdf (19 pages, 220844 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
